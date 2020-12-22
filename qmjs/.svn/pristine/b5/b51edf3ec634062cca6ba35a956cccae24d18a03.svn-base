@@ -1,0 +1,90 @@
+@import "../../styles/variables";
+:global {
+  .comments-wrapper {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15*@unit;
+    .comments-content {
+      flex: 1;
+      overflow-y: auto;
+      .comments-content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10*@unit 15*@unit;
+        font-size: 14*@unit;
+        border-bottom: @border;
+      }
+      .comments-body {
+        min-height: 200*@unit;
+        max-height: 60vh;
+        overflow-y: auto;
+        .comments-item {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 8*@unit 15*@unit;
+          border-bottom: 1*@unit solid #f0f0f0;
+          .comments-portrait {
+            width: 40*@unit;
+            height: 40*@unit;
+            border-radius: 50%;
+          }
+          .comments-name-content {
+            flex: 1;
+            padding: 0 10*@unit;
+            .comments-name {
+              height: 40*@unit;
+              color: @black;
+              font-size: 14*@unit;
+              text-align: left;
+              .comments-date {
+                color: @gray;
+                font-size: 12*@unit;
+              }
+            }
+            .comments-content {
+              color: @black;
+              font-size: 14*@unit;
+              text-align: justify;
+            }
+          }
+          .comments-date-delete {
+            height: 40*@unit;
+            line-height: 40*@unit;
+            .delete {
+              color: @theme;
+            }
+          }
+        }
+      }
+    }
+    .comments-input {
+      display: flex;
+      padding: 10*@unit 15*@unit;
+      .am-input-item {
+        height: 38*@unit !important;
+        min-height: 38*@unit !important;
+        flex: 1;
+        padding: 0 10*@unit;
+        border-radius: 5*@unit;
+        border: @border;
+        .am-list-line::after {
+          display: none !important;
+        }
+        input {
+          font-size: 14*@unit;
+          border: none !important;
+          text-align: left !important;
+        }
+      }
+      .comments-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15*@unit;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import "variables";
+.ant-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.layout-header {
+  height: @headerHeight;
+  width: 100%;
+  background-color: #001529;
+  border-bottom: 1px solid #00264c;
+}
+.ant-layout {
+  width: 100%;
+  min-height: calc(100% - @headerHeight) !important;
+}
+.ant-pro-basicLayout, .ant-layout.ant-layout-has-sider {
+  height: calc(100% - @headerHeight) !important;
+  min-height: calc(100% - @headerHeight) !important;
+}
+.ant-pro-sider-fixed {
+  height: calc(100% - @headerHeight) !important;
+  top: @headerHeight;
+}
+.ant-layout-header {
+  top: @headerHeight !important;
+}
+.ant-layout-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+}
+.ant-menu-item {
+  margin-top: 0 !important;
+}
+.ant-menu-sub {
+  .ant-menu-item-only-child {
+    padding-left: 40px !important;
+  }
+}
+.ant-pro-menu-item {
+  display: flex;
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px !important;
+    padding-right: 16px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px !important;
+      .icon.injected-svg {
+        width: 16px !important;
+        height: 16px !important;
+        color: #fff !important;
+        opacity: 0.65;
+      }
+    }
+  }
+  .ant-pro-menu-item-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.ant-menu-item-selected, .ant-menu-item-active  {
+  .icon.injected-svg {
+    opacity: 1 !important;
+  }
+}
+.ant-pro-table-search {
+  margin-bottom: 10px !important;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+.ant-table-title {
+  padding-left: 15px !important;
+  padding-top: 0 !important;
+}
+
+.ant-modal-body {
+  max-height: 70vh;
+  overflow: auto;
+}
+
+//禁用样式
+.ant-select-disabled {
+  cursor: default !important;
+  .ant-select-selector {
+    background-color: #fff !important;
+    cursor: default !important;
+  }
+  .ant-select-selection-item {
+    color: rgba(0, 0, 0, 0.85) !important;
+    cursor: default !important;
+  }
+}
+.ant-input-disabled, .ant-input-affix-wrapper-disabled {
+  cursor: default !important;
+  background-color: #fff !important;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+.ant-picker-disabled {
+  cursor: default !important;
+  background-color: #fff !important;
+  input {
+    cursor: default !important;
+    color: rgba(0, 0, 0, 0.85) !important;
+  }
+}
+
+.ant-upload.ant-upload-select-picture-card, .ant-upload-list-picture-card-container {
+  margin-bottom: 0 !important;
+}
+
+.ant-radio-wrapper-checked {
+  color: #1890ff !important;
+}

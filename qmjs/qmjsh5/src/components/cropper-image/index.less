@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+:global {
+  .image-cropper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .cropper-wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .image-cropper-button {
+      position: fixed;
+      left: 0;
+      bottom: 100*@unit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10*@unit;
+      width: 100%;
+      div {
+        margin: 10*@unit;
+        width: 100*@unit;
+      }
+    }
+  }
+  .image-cropper-ready {
+    background: black;
+  }
+  .cropper-view-box, .cropper-face {
+    border-radius: 50%;
+  }
+}

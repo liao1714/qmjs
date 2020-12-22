@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+:global{
+  .enrollment-page {
+    height: 100%;
+    width: 100%;
+    background-color: @bg;
+    display: flex;
+    flex-direction: column;
+    color: @black;
+    position: relative;
+    .am-wingblank {
+      flex: 1;
+      overflow: auto;
+      .am-image-picker-list {
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .enroll-time {
+    background-color: white;
+    text-align: center;
+    padding: 10*@unit 0;
+  }
+}

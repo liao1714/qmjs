@@ -1,0 +1,44 @@
+@import "../../../../styles/variables";
+
+:global {
+  .add-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: @bg;
+
+    .placeholder-color {
+      color: @gray;
+    }
+
+    .margin {
+      height: 5*@unit;
+      background-color: @bg;
+    }
+
+    .placeholder-block {
+      display: flex;
+      justify-content: center;
+      color: gray;
+    }
+
+    .members-add-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14*@unit;
+        color: @blue;
+
+        .add {
+          margin-right: 5*@unit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../styles/variables.less";
+
+:global {
+
+  .custom-forms {
+
+    .am-list-content,
+    .am-input-label {
+      // margin-left: 10px!important;
+    }
+
+    .am-list-item .am-input-label.am-input-label-5 {
+      width: 2.7rem;
+    }
+
+    .common-picker-row {
+      display: flex;
+      flex-wrap: wrap;
+
+      .img-item {
+        width: 72*@unit;
+        height: 72*@unit;
+        position: relative;
+        border: 1*@unit solid#ccc;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        .del {
+          position: absolute;
+          right: 5*@unit;
+          top: 4*@unit;
+          width: 15*@unit;
+          height: 15*@unit;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          background-color: rgb(76, 84, 88);
+          z-index: 999;
+          font-size: 14*@unit  !important;
+          border-radius: 50%;
+        }
+      }
+
+      .addImg {
+        width: 72*@unit;
+        height: 72*@unit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30*@unit;
+        color: #ccc;
+        border: 1*@unit solid#ccc;
+      }
+    }
+
+
+  }
+
+}

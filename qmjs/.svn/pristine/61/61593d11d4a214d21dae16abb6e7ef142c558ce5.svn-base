@@ -1,0 +1,120 @@
+@import "../../styles/variables";
+:global{
+  .preference-page {
+    background-color: @bg;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .preference-header {
+      width: 100%;
+      padding: 16*@unit 8*@unit;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      span {
+        width: 70*@unit;
+        height: 35*@unit;
+        background-color: #ccc;
+        border-radius: 25*@unit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14*@unit;
+        letter-spacing: 3*@unit;
+        color: white;
+      }
+    }
+    .sex-title {
+      width: 100%;
+      text-align: center;
+      color: @gray;
+      font-size: 14*@unit;
+    }
+    .sex-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20*@unit 0;
+      .sex-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 20*@unit;
+        color: @gray;
+        touch-action: none;
+        .sex-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50*@unit;
+          height: 50*@unit;
+          border: @border;
+          border-radius: 50%;
+          transition: all ease-in 0.1s;
+        }
+        .sex-name {
+          margin-top: 5*@unit;
+          font-size: 14*@unit;
+          transition: all ease-in 0.1s;
+        }
+      }
+      .sex-item-active {
+        .sex-icon-man {
+          border-color: @blue;
+          background-color: @blue;
+        }
+        .sex-icon-woman {
+          border-color: @red;
+          background-color: @red;
+        }
+        .sex-name-woman{
+          color: @red;
+        }
+        .sex-name-man {
+          color: @blue;
+        }
+        .man,.woman {
+          color: #f0f0f0;
+        }
+      }
+    }
+    .preference-title {
+      width: 100%;
+      text-align: center;
+      color: @gray;
+      font-size: 14*@unit;
+    }
+    .preference-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 30*@unit;
+      margin-bottom: 40*@unit;
+      .preference-list {
+        text-align: center;
+        font-size: 14*@unit;
+        margin-top: 20*@unit;
+        margin-right: 15*@unit;
+        width: calc((100% - 30*@unit) / 3);
+        border: 1*@unit solid @gray;
+        padding: 6*@unit;
+        color: @gray;
+        border-radius: 17*@unit;
+        touch-action: none;
+        transition: all ease-in 0.1s;
+      }
+      .preference-list-active {
+        background-image: linear-gradient(0deg, #ff5629 15%, #ffab95 100%), linear-gradient(#ff5629, #ff5629);
+        background-blend-mode: normal, normal;
+        color: white;
+        border-color: #ffab95;
+        box-shadow: 0 0 5*@unit #ffab95;
+      }
+      .preference-list:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

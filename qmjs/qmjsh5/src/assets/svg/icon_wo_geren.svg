@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_wo_geren</title>
+    <defs>
+        <path d="M31.0000819,17 C35.1286879,17 38.4753387,20.296794 38.4753387,24.3633346 C38.4753387,28.4300366 35.1285241,31.7265079 31.0000819,31.7265079 C26.8716397,31.7265079 23.5246613,28.4298753 23.5246613,24.3631733 C23.5246613,20.2966326 26.8714759,16.9998387 31.0000819,17 M31.0000819,33.3447346 C33.1708514,33.3447346 35.3414571,33.4741282 37.5123904,33.7324314 C40.6441426,34.1056077 43,36.7234886 43,39.8307097 C43,42.6855971 40.6503668,45 37.7520218,45 L24.2479782,45 C21.3496332,45 19,42.6855971 19,39.8307097 C19,36.7234886 21.3556936,34.1056077 24.4874458,33.7324314 C26.6484562,33.4745538 28.8232708,33.3450872 31.0000819,33.3447346" id="path-1"></path>
+        <filter x="-54.2%" y="-28.6%" width="208.3%" height="192.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.274509804   0 0 0 0 0.639215686   0 0 0 0 1  0 0 0 0.469405594 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-390.000000, -669.000000)">
+            <g id="icon_wo_geren" transform="translate(390.000000, 669.000000)">
+                <circle id="椭圆形" fill="#46A3FF" opacity="0.100000001" cx="30.5" cy="30.5" r="30.5"></circle>
+                <g id="形状" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#46A3FF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

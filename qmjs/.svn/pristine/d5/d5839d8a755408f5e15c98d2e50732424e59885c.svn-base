@@ -1,0 +1,299 @@
+@import "../../styles/variables";
+
+:global {
+
+  // #padding-scroll {
+
+  //   background: #FAFCFF;
+
+  // }
+
+  .com-association {
+    padding: 0*@unit  !important;
+    background: #FAFCFF;
+
+    .association-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14*@unit;
+      margin-top: @margin;
+      border-radius: @border-radius;
+      margin-bottom: 1*@unit;
+      background-color: white;
+
+      .association-title {
+        font-size: 14*@unit;
+        color: @black;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 7.5*@unit;
+
+        label {
+          width: 17*@unit;
+          height: 1*@unit;
+          background: #F8D250;
+          position: absolute;
+          left: 0*@unit;
+          bottom: 0*@unit;
+        }
+      }
+
+      .association-create {
+        font-size: 12*@unit;
+        color: #666666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 92.5*@unit;
+        height: 30*@unit;
+        background: #F0F3F6;
+        border-radius: 22*@unit;
+
+        svg {
+          margin-left: 5*@unit;
+          color: #D7D7D7;
+          margin-right: 8*@unit;
+        }
+      }
+    }
+
+    .association-body {
+      display: flex;
+      flex-direction: column;
+      padding: 7.5*@unit 14*@unit;
+      background-color: white;
+
+
+      border-radius: @border-radius;
+
+      .association-list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7.5*@unit;
+        padding-bottom: 7.5*@unit;
+        border-bottom: @unit solid #f1f1f1;
+        overflow: hidden;
+
+        .association-portrait {
+          width: 60*@unit;
+          height: 60*@unit;
+          border-radius: 50%;
+        }
+
+        .association-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          margin-left: 10*@unit;
+          // padding-left: 10*@unit;
+
+          .association-info-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .association-name {
+            font-size: 14*@unit;
+            color: @black;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            // margin-left: 10*@unit;
+            white-space: nowrap;
+
+            .name-block {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              svg {
+                margin-left: 5*@unit;
+
+              }
+
+              img {
+                width: 31*@unit;
+                height: 15.5*@unit;
+                margin-bottom: 3*@unit;
+                margin-left: 10*@unit;
+              }
+            }
+
+            span {
+              color: @blue;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 12*@unit;
+              font-weight: normal;
+              overflow: hidden;
+              // flex-wrap: nowrap;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+
+          }
+
+          .hz-block {
+            width: 46*@unit;
+            height: 33*@unit;
+            background: #fefaed;
+            border-radius: 16*@unit 0*@unit 0*@unit 16*@unit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {}
+          }
+        }
+      }
+
+      .association-list-last {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .spaceText {
+        margin-left: 7*@unit;
+      }
+    }
+
+    .find-body {
+      background: #FAFCFF !important;
+
+
+
+      .association-list {
+        background: #fff;
+        padding: 15*@unit  !important;
+        border-radius: 10*@unit  !important;
+        box-shadow: 0*@unit 7.5*@unit 20*@unit 0*@unit rgba(44, 54, 69, 0.09);
+      }
+    }
+
+    .my-association {
+      border-radius: 5*@unit;
+      margin-bottom: 8*@unit;
+
+
+      .association-content {
+        width: 100%;
+        font-size: 13*@unit;
+        color: @gray;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+
+        // margin-left: 10*@unit;
+
+        img {
+          width: 32*@unit;
+          height: 16*@unit;
+          margin-bottom: 3*@unit;
+          margin-right: 5*@unit;
+        }
+
+        .content-div {
+          // color: @blue;
+          // display: flex;
+          // align-items: center;
+          // justify-content: center;
+          font-size: 12*@unit;
+          font-weight: normal;
+          overflow: hidden;
+          width: 100%;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .find-association {
+      border-radius: 5*@unit;
+
+      .association-detail {
+        font-size: 12*@unit;
+        color: #63ABFF;
+
+      }
+
+      .association-info-content {
+        font-size: 12*@unit;
+        color: @gray;
+
+      }
+
+      .apply-join {
+        // padding: 6*@unit 10*@unit;
+        background: #F8D250;
+        box-shadow: 0*@unit 7.5*@unit 4.5*@unit -3*@unit rgba(255, 185, 46, 0.29);
+        border-radius: 20*@unit;
+        font-size: 12*@unit;
+        color: #FFFFFF;
+
+        width: 68*@unit;
+        height: 30*@unit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .apply-join-disable {
+        opacity: 0.5;
+      }
+    }
+
+    .my-association-button {
+      width: 100%;
+      padding: 16*@unit 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .create-association {
+        width: max-content;
+
+        .btn-sm {
+          margin-left: 0;
+          padding: 7*@unit 10*@unit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            margin-left: 5*@unit;
+          }
+        }
+
+        .create-asso-bt {
+          padding: 6*@unit 10*@unit;
+          background: #F8D250;
+          box-shadow: 0*@unit 7.5*@unit 4.5*@unit -3*@unit rgba(255, 185, 46, 0.29);
+          border-radius: @border-radius;
+          font-size: 12*@unit;
+          color: #FFFFFF;
+          display: flex;
+          align-items: center;
+
+
+
+          svg {
+            margin-left: 5*@unit;
+          }
+        }
+      }
+    }
+  }
+
+
+}

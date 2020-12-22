@@ -1,0 +1,223 @@
+@import "../../../styles/variables";
+
+:global {
+  .detail-page {
+    height: 100%;
+    width: 100%;
+    background-color: @bg;
+    display: flex;
+    flex-direction: column;
+    color: @black;
+    position: relative;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .am-wingblank {
+      flex: 1;
+      overflow: auto;
+      overflow-x: hidden;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .detail-img {
+      width: 100%;
+      height: auto;
+    }
+
+    .detail-title {
+      padding: 16*@unit;
+      font-size: 16*@unit;
+      font-weight: bold;
+      background-color: white;
+    }
+
+    .detail-already-number {
+      background-color: white;
+      margin: @margin 16*@unit;
+      display: flex;
+      align-items: center;
+      // justify-content: flex-end;
+      justify-content: space-between;
+      padding: 10*@unit;
+      border-radius: @border-radius;
+
+      .activity-total {
+        display: flex;
+        align-items: center;
+      }
+
+      .cur-number {
+        display: flex;
+        align-items: center;
+
+        svg,
+        span {
+          color: @blue;
+        }
+      }
+
+
+    }
+
+    .detail-item {
+      margin: 2*@unit 16*@unit 0 16*@unit;
+      font-size: 14*@unit;
+      display: flex;
+
+      .detail-item-icon {
+        background-color: white;
+        border-radius: @border-radius;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10*@unit;
+        margin-right: 2*@unit;
+
+        .activity-address {
+          color: @theme;
+        }
+
+        .activity-time {
+          color: #ffd300;
+        }
+
+        .registration-time {
+          color: #174c9d;
+        }
+
+        .activity-number {
+          color: #ffa60b;
+        }
+      }
+
+      .detail-item-content {
+        flex: 1;
+        padding: 10*@unit 16*@unit;
+        background-color: white;
+        border-radius: @border-radius;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .activity-project {
+      padding: 10*@unit 10*@unit 0 10*@unit;
+      margin: @margin 16*@unit 0 16*@unit;
+      border-radius: @border-radius;
+      background-color: white;
+
+      .project-wrapper {
+        .project-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: white;
+          border-radius: @border-radius;
+          padding: 10*@unit 0;
+          border-top: @unit solid @bg;
+
+          .project-block-l {
+            .project-block-title {
+              font-size: 14*@unit;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+
+              .project-block-money {
+                color: @theme;
+                font-size: 16*@unit;
+                font-weight: bold;
+                margin-left: 10*@unit;
+              }
+            }
+
+            .project-block-number {
+              font-size: 12*@unit;
+              color: @gray;
+
+              .residue {
+                margin-right: 10*@unit;
+              }
+
+              .residue-red {
+                color: @red;
+              }
+
+              .have-sign {
+                color: @gray;
+              }
+            }
+          }
+
+          .project-block-r {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .project-item-disable {
+          color: @gray  !important;
+
+          .residue-red,
+          .have-sign,
+          .project-block-money {
+            color: @gray  !important;
+          }
+        }
+      }
+    }
+
+    .introduce-title {
+      font-size: 14*@unit;
+      font-weight: bold;
+      margin-bottom: 10*@unit;
+    }
+
+    .activity-introduce {
+      margin: 10*@unit 16*@unit;
+      background-color: white;
+      border-radius: @border-radius;
+      padding: 10*@unit;
+
+      .detail-introduce {
+        border-top: @unit solid @bg;
+        padding: 10*@unit 0;
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      align-items: center;
+
+      .detail-share-praise {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: @gray;
+        }
+      }
+
+      .detail-immediately {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

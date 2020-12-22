@@ -1,0 +1,262 @@
+@import "../../../styles/variables";
+
+.activity-events-create {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .ant-row {
+    width: 100%;
+  }
+
+  .activity-project {
+    border: 1px solid #d9d9d9;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .activity-project-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .ant-form-item-label {
+        width: 60px;
+        max-width: 60px;
+      }
+
+      label {
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0 !important;
+      }
+
+      .anticon {
+        height: 100%;
+        margin-bottom: 24px;
+        margin-left: 10px;
+        color: #999;
+        font-size: 20px;
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .anticon:hover {
+        color: @red;
+      }
+    }
+
+    .ant-form-item {
+      flex: 1;
+      display: flex;
+
+      .ant-form-item-control {
+        flex: 1;
+        max-width: 100%
+      }
+    }
+  }
+
+  .form-item-inline {
+    display: flex;
+
+    .ant-form-item {
+      flex: 1;
+      display: flex;
+
+      .ant-form-item-control {
+        flex: 1;
+        max-width: 100%
+      }
+    }
+  }
+
+  .register-form {
+    border: 1px solid #d9d9d9;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+      display: none !important;
+    }
+
+    .register-form-item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .ant-form-item-label {
+        width: 130px;
+        max-width: 130px;
+      }
+
+      label {
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 0 !important;
+      }
+
+      .anticon {
+        height: 100%;
+        margin-bottom: 24px;
+        margin-left: 10px;
+        color: #999;
+        font-size: 20px;
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .anticon:hover {
+        color: @red;
+      }
+    }
+
+    .ant-form-item {
+      flex: 1;
+      display: flex;
+
+      .ant-form-item-control {
+        flex: 1;
+        max-width: 100%
+      }
+    }
+  }
+}
+
+.tag-wrapper {
+  width: 580px !important;
+
+  .add-new-button {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .message-info {
+      font-size: 12px;
+      color: @gray;
+      margin-left: 10px;
+    }
+  }
+
+  .tags-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .ant-tag {
+      text-align: center;
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .ant-tag:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.subItems {
+  .ant-form-item-label>label::after {
+    color: white;
+  }
+
+  .round {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+
+  .square {
+    width: 16px;
+    height: 16px;
+    border: 1px solid gray;
+
+  }
+}
+
+.enrollMethod {
+  .ant-checkbox-group {
+    width: 100%;
+  }
+
+  .teamItem {
+    .ant-checkbox {
+      margin-top: 2px;
+    }
+    .ant-checkbox-wrapper,
+    .ant-checkbox+span {
+      display: flex;
+      align-items: center
+    }
+
+    .groupInp {
+      // width: 120px;
+      margin-left: 10px;
+
+      .ant-col ant-form-item-control {
+        position: relative;
+      }
+
+      .ant-form-item-explain {
+        position: absolute;
+        top: 30px;
+      }
+    }
+  }
+
+  .familyItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3px;
+
+    .familyInp {
+      // width: 285px;
+
+      .ant-col ant-form-item-control {
+        position: relative;
+      }
+
+      .ant-form-item-explain {
+        position: absolute;
+        top: 30px;
+      }
+    }
+
+
+  }
+}
+
+
+.ageInp {
+  width: 500px;
+
+  .ant-col ant-form-item-control {
+    position: relative;
+  }
+
+  .ant-form-item-explain {
+    position: absolute;
+    top: 30px;
+  }
+}

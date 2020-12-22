@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>menu_icon_wodes</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-827.000000, -312.000000)">
+            <g id="menu_icon_wode" transform="translate(825.000000, 312.000000)">
+                <circle id="椭圆形" fill="#F8D250" cx="25" cy="25" r="15"></circle>
+                <g id="编组-9" transform="translate(5.000000, 1.000000)" fill="#333333">
+                    <path d="M32.5,35 C33.3284271,35 34,35.6715729 34,36.5 C34,37.3284271 33.3284271,38 32.5,38 L1.5,38 C0.671572875,38 1.01453063e-16,37.3284271 0,36.5 C-1.01453063e-16,35.6715729 0.671572875,35 1.5,35 L32.5,35 Z M17,0 C24.7319865,0 31,6.2680135 31,14 C31,21.7319865 24.7319865,28 17,28 C9.2680135,28 3,21.7319865 3,14 C3,6.2680135 9.2680135,0 17,0 Z M17,3 C10.9248678,3 6,7.92486775 6,14 C6,20.0751322 10.9248678,25 17,25 C23.0751322,25 28,20.0751322 28,14 C28,7.92486775 23.0751322,3 17,3 Z" id="形状结合"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

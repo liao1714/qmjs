@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_time</title>
+    <defs>
+        <filter x="-6.5%" y="-7.7%" width="113.6%" height="119.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.488513046   0 0 0 0 0.568798498   0 0 0 0 0.689226676  0 0 0 0.100060096 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-6.8%" y="-19.8%" width="114.3%" height="149.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.488513046   0 0 0 0 0.568798498   0 0 0 0 0.689226676  0 0 0 0.100060096 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home-i-体育备份-3" transform="translate(-60.000000, -1223.000000)" fill="#D7D7D7" fill-rule="nonzero">
+            <g id="编组-3" filter="url(#filter-1)" transform="translate(30.000000, 760.000000)">
+                <g id="编组-3备份" filter="url(#filter-2)" transform="translate(30.000000, 313.000000)">
+                    <g id="编组-2备份-2" transform="translate(0.000000, 143.000000)">
+                        <g id="icon_time" transform="translate(0.000000, 7.000000)">
+                            <path d="M9.5,0 C4.25214088,0 0,4.25443758 0,9.5 C0,14.745581 4.25269734,19 9.5,19 C14.7473027,19 19,14.7477891 19,9.50082574 C19,4.25386234 14.7439825,0.000835022096 9.5,0.000835022096 L9.5,0 Z M13.3348192,11.1644495 L8.82528135,11.1644495 C8.79057719,11.1644495 8.77141663,11.1366711 8.73671247,11.1327744 C8.72421081,11.1327744 8.71783014,11.1486212 8.70198976,11.1486212 C8.5909216,11.1455595 8.50763904,11.0599976 8.41072335,11.0124941 C8.32744078,10.9680523 8.23330737,10.9586073 8.16998294,10.8983373 C8.11945694,10.8477721 8.11611822,10.7683336 8.07807533,10.7038885 C8.01144928,10.5897317 7.91648118,10.4886198 7.91648118,10.3522328 C7.91648118,10.336386 7.93536351,10.3269409 7.93536351,10.3111126 C7.93536351,10.2952843 7.91648118,10.2794375 7.91648118,10.260566 L7.91648118,4.0869507 C7.91648118,3.59916791 8.27105347,3.20305198 8.70505026,3.20305198 C9.13904704,3.20305198 9.49361933,3.59916791 9.49361933,4.0869507 L9.49361933,9.54528603 L13.3348192,9.54528603 C13.8382243,9.54528603 14.2466613,9.9063867 14.2466613,10.3530493 C14.2466613,10.7997119 13.8382243,11.1644495 13.3348192,11.1644495 L13.3348192,11.1644495 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

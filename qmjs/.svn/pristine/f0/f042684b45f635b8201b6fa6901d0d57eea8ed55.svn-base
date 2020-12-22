@@ -1,0 +1,85 @@
+:global {
+  .enrollinfo-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .am-wingblank {
+      flex: 1;
+      overflow: auto;
+
+      .enroll {
+
+        .enroll-status {
+          padding: 5px 10px;
+          background-color: #fff;
+
+
+          .flag {
+            color: rgb(196, 7, 17);
+          }
+        }
+
+        .enroll-info {
+          .enroll-info-header {
+            padding: 5px 10px;
+          }
+
+          .enroll-info-content {
+            background-color: #fff;
+
+            .enroll-info-content-item {
+              display: flex;
+              justify-content: space-between;
+              padding: 5px 10px;
+
+              span {
+                color: gray;
+              }
+            }
+          }
+        }
+
+        .personal-info {
+          .personal-info-header {
+            padding: 5px 10px;
+          }
+        }
+
+        .order-info {
+          margin: 10px;
+          padding: 10px;
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+
+          .order-info-number {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+              color: rgb(196, 7, 17);
+            }
+          }
+
+          .order-info-money {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .price {
+              color: rgb(196, 7, 17);
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+
+
+}

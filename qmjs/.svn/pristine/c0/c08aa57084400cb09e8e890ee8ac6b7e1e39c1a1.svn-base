@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+:global{
+  .base-layout-wrapper {
+    height: 100%;
+    width: 100%;
+    .is-select {
+      color: @theme !important;
+      width: 21*@unit;
+      height: 21*@unit;
+    }
+    .unselect {
+      width: 21*@unit;
+      height: 21*@unit;
+    }
+  }
+}

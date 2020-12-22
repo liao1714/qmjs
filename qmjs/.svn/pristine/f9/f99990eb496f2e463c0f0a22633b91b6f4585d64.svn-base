@@ -1,0 +1,85 @@
+// @ts-nocheck
+import { Component } from 'react';
+import { ApplyPluginsType } from 'umi';
+import dva from 'dva';
+// @ts-ignore
+import createLoading from 'E:/i-sport/qmjsadmin/node_modules/dva-loading/dist/index.esm.js';
+import { plugin, history } from '../core/umiExports';
+import ModelAccount0 from 'E:/i-sport/qmjsadmin/src/models/account.js';
+import ModelEvents1 from 'E:/i-sport/qmjsadmin/src/models/events.js';
+import ModelFormTemplate2 from 'E:/i-sport/qmjsadmin/src/models/formTemplate.js';
+import ModelGlobal3 from 'E:/i-sport/qmjsadmin/src/models/global.js';
+import ModelLocation4 from 'E:/i-sport/qmjsadmin/src/models/location.js';
+import ModelLogin5 from 'E:/i-sport/qmjsadmin/src/models/login.js';
+import ModelRole6 from 'E:/i-sport/qmjsadmin/src/models/role.js';
+import ModelSetting7 from 'E:/i-sport/qmjsadmin/src/models/setting.js';
+import ModelTabs8 from 'E:/i-sport/qmjsadmin/src/models/tabs.js';
+
+let app:any = null;
+
+export function _onCreate(options = {}) {
+  const runtimeDva = plugin.applyPlugins({
+    key: 'dva',
+    type: ApplyPluginsType.modify,
+    initialValue: {},
+  });
+  app = dva({
+    history,
+    
+    ...(runtimeDva.config || {}),
+    // @ts-ignore
+    ...(typeof window !== 'undefined' && window.g_useSSR ? { initialState: window.g_initialProps } : {}),
+    ...(options || {}),
+  });
+  
+  app.use(createLoading());
+  
+  (runtimeDva.plugins || []).forEach((plugin:any) => {
+    app.use(plugin);
+  });
+  app.model({ namespace: 'account', ...ModelAccount0 });
+app.model({ namespace: 'events', ...ModelEvents1 });
+app.model({ namespace: 'formTemplate', ...ModelFormTemplate2 });
+app.model({ namespace: 'global', ...ModelGlobal3 });
+app.model({ namespace: 'location', ...ModelLocation4 });
+app.model({ namespace: 'login', ...ModelLogin5 });
+app.model({ namespace: 'role', ...ModelRole6 });
+app.model({ namespace: 'setting', ...ModelSetting7 });
+app.model({ namespace: 'tabs', ...ModelTabs8 });
+  return app;
+}
+
+export function getApp() {
+  return app;
+}
+
+export class _DvaContainer extends Component {
+  constructor(props: any) {
+    super(props);
+    // run only in client, avoid override server _onCreate()
+    if (typeof window !== 'undefined') {
+      _onCreate();
+    }
+  }
+
+  componentWillUnmount() {
+    let app = getApp();
+    app._models.forEach((model:any) => {
+      app.unmodel(model.namespace);
+    });
+    app._models = [];
+    try {
+      // 释放 app，for gc
+      // immer 场景 app 是 read-only 的，这里 try catch 一下
+      app = null;
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
+  render() {
+    const app = getApp();
+    app.router(() => this.props.children);
+    return app.start()();
+  }
+}

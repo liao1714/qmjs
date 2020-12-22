@@ -1,0 +1,204 @@
+@import "../../../styles/variables";
+
+:global {
+  .detail-page {
+    height: 100%;
+    width: 100%;
+    background-color: @bg;
+    display: flex;
+    flex-direction: column;
+    color: @black;
+    position: relative;
+
+    .association {
+      .association-list {
+        display: flex;
+        align-items: center;
+        padding: 14*@unit;
+        margin-top: @margin;
+        border-radius: @border-radius;
+        margin-bottom: @margin;
+        background-color: white;
+
+        .association-portrait {
+          width: 50*@unit;
+          height: 50*@unit;
+          border-radius: 50%;
+          margin-right: 10*@unit;
+        }
+
+        .association-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          .association-name {
+            font-size: 14*@unit;
+            color: @black;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: nowrap;
+
+            span {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: @blue;
+              font-weight: normal;
+            }
+          }
+        }
+
+        .association-detail {
+          font-size: 14*@unit;
+          color: @theme;
+        }
+
+        .association-info-content {
+          color: @gray;
+        }
+
+        .community-association-button {
+          width: 55*@unit;
+          height: 25*@unit;
+          background-image: linear-gradient(0deg, #ff5629 15%, #ffab95 100%), linear-gradient(#ff5629, #ff5629);
+          background-blend-mode: normal, normal;
+          border-radius: @border-radius;
+          font-size: 13*@unit;
+          margin-left: 10*@unit;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+
+
+          // background: #F8D250;
+          // box-shadow: 0*@unit 22*@unit 6*@unit -4*@unit rgba(255, 185, 46, 0.29);
+        }
+
+        .community-association-button-disabled {
+          opacity: 0.5;
+        }
+      }
+
+      .association-about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .association-about-item {
+          border-radius: @border-radius;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 60*@unit;
+          padding: 0 14*@unit;
+          margin-right: @margin;
+          color: @gray;
+        }
+
+        span {
+          color: @gray;
+          font-size: 12*@unit;
+        }
+
+        .association-member {
+          flex: 1;
+          height: 60*@unit;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          background-color: white;
+          padding: 0 14*@unit;
+          border-radius: @border-radius;
+
+          .association-member-image {
+            position: relative;
+            flex: 1;
+            height: 60*@unit;
+
+            img {
+              position: absolute;
+              width: 35*@unit;
+              height: 35*@unit;
+              border-radius: 50%;
+              box-shadow: 0 0 10*@unit rgba(0, 0, 0, 0.3);
+              top: 12.5*@unit;
+            }
+
+            .member-image-1 {
+              right: @margin;
+              z-index: 7;
+            }
+
+            .member-image-2 {
+              right: 4*@margin;
+              z-index: 6;
+            }
+
+            .member-image-3 {
+              right: 7*@margin;
+              z-index: 5;
+            }
+
+            .member-image-4 {
+              right: 10*@margin;
+              z-index: 4;
+            }
+
+            .member-image-5 {
+              right: 13*@margin;
+              z-index: 3;
+            }
+
+            .member-image-6 {
+              right: 16*@margin;
+              z-index: 2;
+            }
+
+            .member-image-7 {
+              right: 19*@margin;
+              z-index: 1;
+            }
+          }
+
+          .member-number {
+            color: @gray;
+            font-size: 14*@unit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .community-activity-item {
+      .community-activity-header {}
+
+      .community-activity-body {
+        .community-activity-content {
+          display: flex;
+          align-items: center;
+
+          .top-quality {
+            position: relative;
+            top: 2*@unit ;
+          }
+        }
+      }
+    }
+
+    .high-quality {
+      background-color: @orange;
+      font-size: 12*@unit;
+      padding: 2*@unit 8*@unit;
+      margin-right: 10*@unit;
+      color: white;
+      border-top-left-radius: 8*@unit;
+      border-bottom-right-radius: 8*@unit;
+    }
+  }
+}

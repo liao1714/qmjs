@@ -1,0 +1,145 @@
+@import "../../../styles/variables";
+
+:global {
+  .family-enroll-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+
+    .am-wingblank {
+      flex: 1;
+      overflow: auto;
+      padding-bottom: 120*@unit  !important;
+
+      .am-image-picker-list {
+        padding: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .head-price {
+      .am-input-control {
+        input {
+          color: #ff5629 !important
+        }
+      }
+    }
+
+    .active-info {
+      .active-header {
+        padding: 10*@unit 16*@unit;
+      }
+
+
+    }
+
+    .enroll-info {
+      .enroll-info-header {
+        padding: 10*@unit 16*@unit;
+
+        .desc {
+          color: gray;
+        }
+      }
+
+      .enroll-info-content {}
+    }
+
+    .pay-info {
+      margin-top: 20*@unit;
+      padding: 0 15*@unit;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+
+      .pay-info-text {
+        padding: 5*@unit 0;
+        border-bottom: 1*@unit solid rgb(248, 247, 247);
+      }
+
+      .pay-info-wx {
+        padding: 10*@unit 0;
+        border-bottom: 1*@unit solid rgb(248, 247, 247);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .pay-info-wx-text {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 40*@unit;
+            height: 40*@unit;
+          }
+
+          span {
+            margin-left: 10*@unit;
+          }
+
+        }
+
+        .am-checkbox.am-checkbox-checked .am-checkbox-inner {
+          border-color: rgb(0, 118, 255);
+          background: rgb(0, 118, 255);
+        }
+      }
+    }
+
+    .op-info {
+      background-color: #fff;
+      margin-top: 5*@unit;
+      padding: 20*@unit 16*@unit 16*@unit 16*@unit;
+      display: flex;
+      flex-direction: column;
+
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      z-index: 999;
+
+      .agree-info {
+        display: flex;
+        justify-content: center;
+
+
+      }
+
+      .enroll-op {
+        display: flex;
+        height: 40*@unit;
+        margin-top: 5*@unit;
+
+        .enroll-op-left {
+          display: flex;
+          flex: 1;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          font-size: 18*@unit;
+          font-weight: bold;
+
+          .price {
+            color: #ff5629;
+          }
+        }
+
+        .enroll-op-right {
+          display: flex;
+          height: 100%;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(196, 7, 17);
+          color: #fff;
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,221 @@
+@import "../../styles/variables";
+
+:global {
+  .activity-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8*@unit 16*@unit 0 16*@unit;
+    // background-color: white;
+
+    // background: #FAFCFF;
+
+    .activity-item {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin-bottom: 10*@unit;
+      border: @unit solid #f1f1f1;
+      border-radius: @border-radius;
+      box-shadow: 0 0 2*@unit 0 rgba(51, 51, 51, 0.1);
+
+      .activity-title-image {
+        padding: 10*@unit;
+        // border-bottom: @unit solid #f1f1f1;
+        display: flex;
+        flex-direction: column;
+
+        .activity-image-wrapper {
+          position: relative;
+
+          box-shadow: 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1);
+
+          .activity-image {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: @border-radius;
+            border-top-right-radius: @border-radius;
+
+            box-shadow: 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1);
+          }
+
+          .tag {
+            position: absolute;
+            right: 0;
+            top: 10*@unit;
+            background: rgba(0, 0, 0, 0.08);
+            border-radius: 10*@unit 0*@unit 0*@unit 10*@unit;
+            box-shadow: 0px 2px 20px 0px rgba(125, 145, 176, 0.1);
+            padding: 2*@unit 5*@unit 2*@unit 10*@unit;
+            color: #63ABFF;
+            font-size: 12*@unit;
+          }
+        }
+
+        .activity-baseinfo {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          .activity-title {
+            margin-top: 10*@unit;
+            font-size: 14*@unit;
+            color: @black;
+            font-weight: bold;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+            /* autoprefixer: on */
+          }
+
+          .activity-price {
+            width: 50*@unit;
+            margin-top: 10*@unit;
+            color: #FA6400;
+          }
+        }
+
+
+      }
+
+      .activity-detail {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10*@unit 10*@unit 10*@unit ;
+
+        .activity-block {
+          display: flex;
+          flex-direction: column;
+
+          .activity-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // justify-content: center;
+            color: #999999;
+            font-size: 12*@unit;
+            padding: 4*@unit 3*@unit;
+
+            .item-text {
+              max-width: 150*@unit;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              /* autoprefixer: off */
+              -webkit-box-orient: vertical;
+              margin-left: 3*@unit;
+              /* autoprefixer: on */
+            }
+          }
+        }
+
+
+
+
+
+        .activity-number-button-wrapper {
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .activity-number {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #999999;
+            font-size: 12*@unit;
+            margin-right: 10*@unit;
+          }
+
+          .activity-number-button {
+            .button-disabled {
+              // width: 75*@unit;
+              // height: 35*@unit;
+              // display: flex;
+              // align-items: center;
+              // justify-content: center;
+              // font-size: 14*@unit;
+              // border-radius: @border-radius;
+              // color: #999;
+              // border: @unit solid #999;
+
+              width: 100*@unit;
+              height: 40*@unit;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 15*@unit;
+              color: #FFFFFF;
+              border: @unit solid @theme;
+              border-radius: 20*@unit;
+              background: #F8D250;
+              text-shadow: 0*@unit 1*@unit 10*@unit rgba(125, 145, 176, 0.1), 0px 1*@unit 10*@unit rgba(125, 145, 176, 0.1);
+              box-shadow: 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1), 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1), 0*@unit 11*@unit 6*@unit -5*@unit rgba(255, 185, 46, 0.29);
+            }
+
+            .button-active {
+              // width: 75*@unit;
+              // height: 35*@unit;
+              // display: flex;
+              // align-items: center;
+              // justify-content: center;
+              // font-size: 14*@unit;
+              // color: @theme;
+              // border: @unit solid @theme;
+              // border-radius: @border-radius;
+
+              width: 100*@unit;
+              height: 40*@unit;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 15*@unit;
+              color: #FFFFFF;
+              border: @unit solid @theme;
+              border-radius: 20*@unit;
+              background: #F8D250;
+              text-shadow: 0*@unit 1*@unit 10*@unit rgba(125, 145, 176, 0.1), 0px 1*@unit 10*@unit rgba(125, 145, 176, 0.1);
+              box-shadow: 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1), 0*@unit 1*@unit 10*@unit 0*@unit rgba(125, 145, 176, 0.1), 0*@unit 11*@unit 6*@unit -5*@unit rgba(255, 185, 46, 0.29);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .enroll-modal {
+    .am-modal-content {
+      padding: 15*@unit 0;
+    }
+
+    .btn-md {
+      margin-left: 0 !important;
+    }
+
+    .am-modal-body {
+      padding: 0 30*@unit  !important;
+    }
+
+    .am-modal-close {
+      top: 10*@unit;
+      right: 10*@unit;
+      width: 15*@unit;
+      height: 15*@unit;
+    }
+
+    .enroll-item-wrapper {
+      padding: 5*@unit 0;
+    }
+  }
+}

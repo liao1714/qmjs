@@ -1,0 +1,118 @@
+@import "variables";
+@background-image: linear-gradient(0deg, #ff5629 15%, #ffab95 100%), linear-gradient(#ff5629, #ff5629);
+@background-image-gray: linear-gradient(0deg, @gray 15%, #ccc 100%), linear-gradient(@gray, @gray);
+@background-blend-mode: normal, normal;
+@color: #ffffff;
+
+.btn-lg {
+  width: 100%;
+  height: 40*@unit;
+  background-image: @background-image;
+  background-blend-mode: @background-blend-mode;
+  border-radius: @border-radius;
+  color: @color;
+  font-size: 16*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2*@unit;
+}
+.btn-lg-disabled {
+  opacity: 0.5;
+}
+.btn-lg-gray {
+  background-image: @background-image-gray;
+}
+
+.btn-lg-border {
+  width: 100%;
+  height: 40*@unit;
+  border-radius: @border-radius;
+  font-size: 16*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2*@unit;
+  background-color: #ffffff;
+  border: solid 1*@unit #ffab95;
+  color: #ffab95;
+}
+.btn-lg-border-gray {
+  width: 100%;
+  height: 40*@unit;
+  border-radius: @border-radius;
+  font-size: 16*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2*@unit;
+  background-color: #ffffff;
+  border: solid 1*@unit #999999;
+  color: #999999;
+}
+
+.btn-md {
+  width: 100%;
+  height: 40*@unit;
+  font-size: 14*@unit;
+  background-image: @background-image;
+  background-blend-mode: @background-blend-mode;
+  border-radius: @border-radius;
+  margin-left: 10*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @color;
+}
+.btn-md-disabled {
+  opacity: 0.5;
+}
+.btn-md-gray {
+  background-color: @gray;
+}
+
+.btn-sm {
+  width: 100%;
+  min-width: 65*@unit;
+  padding: 5*@unit 10*@unit;
+  font-size: 14*@unit;
+  background-image: @background-image;
+  background-blend-mode: @background-blend-mode;
+  border-radius: @border-radius;
+  margin-left: 10*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @color;
+  white-space: nowrap;
+}
+.btn-sm-disabled {
+  opacity: 0.5;
+}
+.btn-sm-gray {
+  background-image: @background-image-gray;
+  background-color: @gray !important;
+}
+
+
+.btn-xs {
+  width: 100%;
+  min-width: 55*@unit;
+  padding: 4*@unit 8*@unit;
+  font-size: 13*@unit;
+  background-image: @background-image;
+  background-blend-mode: @background-blend-mode;
+  border-radius: @border-radius;
+  margin-left: 10*@unit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: @color;
+}
+.btn-xs-disabled {
+  opacity: 0.5;
+}
+.btn-xs-gray {
+  background-image: @background-image-gray;
+  background-color: @gray;
+}

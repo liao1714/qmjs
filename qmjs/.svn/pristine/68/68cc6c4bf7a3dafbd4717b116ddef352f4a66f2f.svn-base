@@ -1,0 +1,106 @@
+// @ts-nocheck
+import { ApplyPluginsType, dynamic } from 'E:/i-sport/qmjsadmin/node_modules/@umijs/runtime';
+import { plugin } from './plugin';
+import LoadingComponent from '@/components/PageLoading/index';
+
+export function getRoutes() {
+  const routes = [
+  {
+    "path": "/login",
+    "component": dynamic({ loader: () => import(/* webpackChunkName: 'layouts__BlankLayout' */'E:/i-sport/qmjsadmin/src/layouts/BlankLayout'), loading: LoadingComponent}),
+    "routes": [
+      {
+        "path": "/login",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__login' */'E:/i-sport/qmjsadmin/src/pages/login'), loading: LoadingComponent}),
+        "exact": true
+      }
+    ]
+  },
+  {
+    "component": dynamic({ loader: () => import(/* webpackChunkName: 'layouts__BasicLayout' */'E:/i-sport/qmjsadmin/src/layouts/BasicLayout'), loading: LoadingComponent}),
+    "routes": [
+      {
+        "path": "/",
+        "redirect": "/events/list",
+        "exact": true
+      },
+      {
+        "name": "活动赛事管理",
+        "icon": "events",
+        "code": "events",
+        "path": "/events",
+        "routes": [
+          {
+            "name": "活动管理",
+            "icon": "",
+            "path": "/events/list",
+            "code": "events_list",
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__events__list' */'E:/i-sport/qmjsadmin/src/pages/events/list'), loading: LoadingComponent}),
+            "exact": true
+          },
+          {
+            "name": "新建活动赛事",
+            "icon": "",
+            "path": "/events/create",
+            "code": "eventsCreate",
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__events__create' */'E:/i-sport/qmjsadmin/src/pages/events/create'), loading: LoadingComponent}),
+            "hideInMenu": true,
+            "exact": true
+          },
+          {
+            "name": "编辑活动赛事",
+            "icon": "",
+            "path": "/events/editor",
+            "code": "eventsEditor",
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__events__editor' */'E:/i-sport/qmjsadmin/src/pages/events/editor'), loading: LoadingComponent}),
+            "hideInMenu": true,
+            "exact": true
+          },
+          {
+            "name": "报名信息查看",
+            "icon": "",
+            "path": "/events/enroll",
+            "code": "eventsEnroll",
+            "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__events__enroll' */'E:/i-sport/qmjsadmin/src/pages/events/enroll'), loading: LoadingComponent}),
+            "hideInMenu": true,
+            "exact": true
+          }
+        ]
+      },
+      {
+        "name": "运营位置管理",
+        "icon": "location",
+        "path": "/location",
+        "code": "location",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__location__list' */'E:/i-sport/qmjsadmin/src/pages/location/list'), loading: LoadingComponent}),
+        "exact": true
+      },
+      {
+        "name": "账号管理",
+        "icon": "account",
+        "path": "/account",
+        "code": "account",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__account__list' */'E:/i-sport/qmjsadmin/src/pages/account/list'), loading: LoadingComponent}),
+        "exact": true
+      },
+      {
+        "name": "角色管理",
+        "icon": "role",
+        "path": "/role",
+        "code": "role",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__role__list' */'E:/i-sport/qmjsadmin/src/pages/role/list'), loading: LoadingComponent}),
+        "exact": true
+      }
+    ]
+  }
+];
+
+  // allow user to extend routes
+  plugin.applyPlugins({
+    key: 'patchRoutes',
+    type: ApplyPluginsType.event,
+    args: { routes },
+  });
+
+  return routes;
+}

@@ -1,0 +1,12 @@
+@theme: #1890ff;
+@headerHeight: 60px;
+
+@black: #222;
+@gray: #999999;
+@bg: #f7f7f7;
+@blue: #108ee9;
+@green: #6abf47;
+@yellow: #ffc600;
+@red: #f4333c;
+@orange: #f76a24;
+@purple: #e91ce6;
